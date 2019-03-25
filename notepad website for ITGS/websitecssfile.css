@@ -1,0 +1,313 @@
+body {
+	font-family: verdana;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+.header-about {
+	margin-top:100px;
+	margin-left:100px;
+	margin-right:100px;
+	text-align:center;
+	border-bottom:6px solid #7484A0;
+	border-radius:5px;
+}
+
+.header {
+	margin-top:100px;
+	margin-left:100px;
+	margin-right:100px;
+	text-align:center;
+	border-bottom:6px solid #99ACAF;
+	border-radius:5px;
+}
+
+.header2 {
+	margin-left:250px;
+	margin-right:250px;
+	text-align:center;
+	border-bottom:3px solid #AF99A1;
+	padding-top:50px;
+	padding-bottom:15px;
+}
+
+
+.navbar {
+	background-color: #464747;
+	width: 100%;
+	position:fixed;
+	top:0;
+	z-index:1
+  
+}
+
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 18px;  /*chosen to fit the nav bar*/
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 70px;
+	background-color:#464747;
+	font-family:verdana;
+	margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #429CA9;
+}
+
+.dropdown-content {
+	display: none;
+	overflow: auto;
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: #353D3E;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.title-of-website {
+	font-size: 18px;  /*chosen to fit the nav bar*/
+	color: white;
+	padding: 14px 70px;
+	background-color: inherit;
+	font-family:verdana;
+	margin: 0;
+	
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+.bottom-left {
+	position: absolute;
+	bottom: 100px;
+	left: 150px;
+	color: white;
+	width:600px;
+	display:inline;
+	float:right;	
+}
+
+
+
+.logo {
+	position:absolute;
+	width:150px;
+	height:auto;
+	max-width:100%;
+	float:left;
+	margin-right:20px;
+	bottom:100px;
+}
+
+
+
+
+
+.modal-images {
+	margin-bottom: 80px;
+	cursor: pointer;
+	transition: 0.3s;
+	width:500px;
+	height:300px;
+	object-fit:cover;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	border-radius:8px;
+   
+}
+
+.modal-images:hover {opacity: 0.7;}
+
+
+
+/* i have decided to not use style sheet for the images of the model image itself because I could not use object-fit in css for some reason.*/
+
+
+
+/* The Modal (background) */
+.modal {
+	z-index: 1; /* Sit on top */
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	padding-top: 50px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0.5); /* Fallback color */
+	background-color: rgba(0,0,0,1); /* Black with no opacity */
+}
+
+/* Modal Content (image pop-up) */
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	height: 100%;
+	max-width: 1000px;
+	max-height: 
+}
+
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.title-of-modal-image {
+	text-align:center;
+	margin-top:80px;
+	margin-bottom:20px;
+	font-weight:700;
+}
+
+
+.about-text {
+	width:600px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 70px;
+		
+}
+
+.about-text-client-name-header {
+	border-bottom:4px solid #828282;
+	width:300px;
+}
+
+.profile-picture {
+	width:250px;
+	float:right;
+	margin-left:40px;
+	border-radius:7px
+}
+
+.logo-picture-in-aboutpg {
+	width:250px;
+	float:right;
+	margin-left:40px;
+	margin-bottom:100px;
+	object-fit:cover;
+}
+
+.footer {
+	position:fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #464747;
+	color:white;
+	text-align:center;
+	margin-top:20px;
+	font-size: 10px;
+	
+}

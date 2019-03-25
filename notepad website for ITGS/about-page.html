@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="websitecssfile.css">
+
+</head>
+
+<title> Daeho Kim | ABOUT </title>
+
+<body>
+
+<div class="navbar">
+ <div class="dropdown" style="float:right">
+  <button class="dropbtn">Menu</button>
+   <div class="dropdown-content">
+	<a href="home-page.html">Home</a>
+	<a href="about-page.html">About</a>
+	<a href="commercial-page.html">Commercial</a>
+	<a href="condoandapt-page.html">Condominium <br> & Apartment</a>
+	<a href="house-page.html">House <br> & Townhouse</a>
+	<a href="interiordesign-page.html">Interior Design</a>
+	<a href="renovation-page.html">Renovation</a>
+  </div>
+ </div>
+	<div>
+	<h2 class="title-of-website">Daeho Kim's Website</h2>
+	</div>
+</div>
+
+<header class="header-about"> 
+	<h1>About the Architect . . . </h1>
+</header>
+
+<div class="about-text">
+	<h2 class="about-text-client-name-header"> Daeho Kim </h2>
+		<p> <img src="C:\Users\ks138\Desktop\notepad website for ITGS\images in website\Daeho-Kim's-profile-image.jpg" 
+			alt="Daeho Kim's profile picture"
+			class="profile-picture">
+			I am an architect who currently works for Nuvo Architectures and Interiors.
+			</p>
+		<p>I graduated from university and graduate school of architecture in South Korea with a Masters in architexture. After graduation, I worked for six years at two Korean architecture companies. Then I immigrated to Nova Scotia, Canada in 2006 to work for Geoff Keddy and Associates for nine years.   </p>
+			
+			
+</div>
+
+
+<div class="about-text" style="margin-top:100px;margin-bottom:100px">
+	<h2 class="about-text-client-name-header"> Contact </h2>
+		<p><img src="C:\Users\ks138\Desktop\notepad website for ITGS\images in website\DaehoKim-logo-transparent_background.gif" 
+			alt="Daeho Kim's logo"
+			class="logo-picture-in-aboutpg">
+			E-mail: <a href="daeho129@gmail.com">daeho129@gmail.com</a></p>
+</div>
+	
+
+<div class="footer">
+<p>Copyright &#0169 2011-2017, Daeho Kim, All Rights Reserved.
+</div>
+
+<script>
+  /**
+    * Disable right-click of mouse, F12 key, and save key combinations on page
+    * By Arthur Gareginyan (arthurgareginyan@gmail.com)
+    * For full source code, go to https://mycyberuniverse.com
+    */
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>	
+		
+</body>
+</html>
